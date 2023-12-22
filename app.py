@@ -24,4 +24,6 @@ submit = st.button("Ask the question")
 
 ## when submit is clicked
 if submit:
-    response = get_gemini_response()
+    response = get_gemini_response(input)
+    st.subheader("Response from GeminiPro: ")
+    st.write(response)
